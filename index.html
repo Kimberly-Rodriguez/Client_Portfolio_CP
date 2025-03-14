@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"> 
+
+  <!-- FontAwesome link -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <nav class="bg-custom-nav text-white p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">My Portfolio</h1>
+    <ul class="flex space-x-4">
+      <li><a href="#about" class="hover:text-gray-400" id="about-link">About</a></li>
+      <li><a href="#interests" class="hover:text-gray-400">Interests</a></li>
+      <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
+      <li><a href="#connect" class="hover:text-gray-400">Connect</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-bg relative h-screen flex items-center justify-center">
+    <div class="text-center bg-gray-900 bg-opacity-50 p-10 rounded-lg rectangle">
+      <h2 class="text-4xl font-bold text-white">Carrisa Po</h2>
+      <p class="text-lg text-gray-300 mt-2 italic">"Education should be free and equal—like the web."</p>
+    </div>
+  </header>
+
+
+  <!-- About Me Section-->
+  <section id="about" class="p-10 text-center">
+    <h2 class="text-3xl font-bold">About Me</h2>
+    <p class="mt-4 text-gray-700">I am an aspiring developer with a passion for education justice, creative
+      problem-solving, and building (both in code and with Legos)—all while enjoying a good boba tea 🧋.</p>
+  </section>
+
+ 
+<!-- Interests Section -->
+<section id="interests" class="p-10 bg-gray-200">
+  <h2 class="text-3xl font-bold text-center">My Interests</h2>
+  <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="interest-card bg-white p-6 shadow-lg rounded-lg">
+      <div class="text-overlay">
+        <h3 class="text-xl font-semibold mt-4">Coding</h3>
+        <p class="text-gray-600">I am passionate about development and enjoy exploring new technologies.</p>
+      </div>
+    </div>
+    <div class="interest-card bg-white p-6 shadow-lg rounded-lg">
+      <div class="text-overlay">
+        <h3 class="text-xl font-semibold mt-4">Education</h3>
+        <p class="text-gray-600">I believe in education justice and that education should be accessible to everyone.</p>
+      </div>
+    </div>
+    <div class="interest-card bg-white p-6 shadow-lg rounded-lg">
+      <div class="text-overlay">
+        <h3 class="text-xl font-semibold mt-4">Legos</h3>
+        <p class="text-gray-600">I love building—whether it’s with code or Legos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="p-10 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center">My Skills</h2>
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white p-6 shadow-lg rounded-lg">
+        <h3 class="text-xl font-semibold">HTML & CSS</h3>
+        <p class="text-gray-600">Experienced in building responsive websites using HTML5 and CSS3.</p>
+      </div>
+      <div class="bg-white p-6 shadow-lg rounded-lg">
+        <h3 class="text-xl font-semibold">JavaScript(Beginner)</h3>
+        <p class="text-gray-600">Currently learning JavaScript basics, focusing on understanding its core concepts.</p>
+      </div>
+      <div class="bg-white p-6 shadow-lg rounded-lg">
+        <h3 class="text-xl font-semibold">Git & GitHub</h3>
+        <p class="text-gray-600">Familiar with version control and collaboration using Git and GitHub.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Connect Section -->
+  <section id="connect" class="p-10 text-center">
+    <h2 class="text-3xl font-bold">Connect with Me</h2>
+    <div class="flex justify-center space-x-6 mt-4">
+      <a href="#" class="text-[#B17BFF] text-4xl"><i class="fas fa-envelope"></i></a>
+      <a href="#" target="_blank" class="text-[#B17BFF] text-4xl"><i class="fab fa-github"></i></a>
+      <a href="#" target="_blank" class="text-[#B17BFF] text-4xl"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+</body>
+
+</html>
