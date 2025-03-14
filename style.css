@@ -1,0 +1,238 @@
+/* Global Styles */
+body {
+  background-color: #f7fafc;
+  color: #4a4a4a;
+}
+
+/* Navbar Styles */
+.bg-custom-nav {
+  background-color: #C6A1D0;
+  color: white;
+}
+
+nav a {
+  color: white;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+#about-link {
+  background-color: #B17FBF;
+  padding: 0.5rem 1rem;  
+  border-radius: 5px;    
+}
+
+#about-link:hover {
+  background-color: #9e65a7; 
+}
+
+/* Connect Section Styles */
+#connect {
+  background-color: #C6A1D0;
+}
+
+#connect a {
+  color: #B17BFF;
+  font-size: 2.5rem;
+  transition: color 0.3s;
+}
+
+#connect a:hover {
+  color: #fff;
+}
+
+/* Interest Section Card Styles */
+#interests .bg-white {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#interests .bg-white h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+#interests .bg-white p {
+  color: #666;
+}
+
+#interests .interest-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  height: 200px; 
+  position: relative;
+}
+
+#interests .interest-card:nth-child(1) {
+  background-image: url('images/lego_computer_icon.jpeg');
+}
+
+#interests .interest-card:nth-child(2) {
+  background-image: url('images/lego_book_icon.jpeg');
+}
+
+#interests .interest-card:nth-child(3) {
+  background-image: url('images/lego_piece_icon.jpeg');
+}
+
+#interests .interest-card .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#interests .interest-card .text-overlay h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+}
+
+#interests .interest-card .text-overlay p {
+  color: #d1d1d1;
+}
+
+/* Hero Section */
+header {
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-bg {
+  background-image: url('images/hero-image.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.rectangle {
+  width: 65%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media Queries */
+
+/* Small devices (phones) */
+@media (max-width: 640px) {
+  /* Navbar adjustments */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav a {
+    padding: 0.5rem;
+  }
+
+  /* Hero Section */
+  .hero-bg {
+    height: 80vh;
+  }
+  .rectangle {
+    width: 80%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  /* Interests Section */
+  #interests .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Skills Section */
+  #skills .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Connect Section */
+  #connect .flex {
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Navbar adjustments */
+  nav {
+    flex-direction: row;
+  }
+
+  /* Hero Section */
+  .hero-bg {
+    height: 70vh;
+  }
+  .rectangle {
+    width: 70%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  /* Interests Section */
+  #interests .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Skills Section */
+  #skills .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Connect Section */
+  #connect .flex {
+    flex-direction: row;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1025px) {
+  /* Hero Section */
+  .hero-bg {
+    height: 100vh;
+  }
+  .rectangle {
+    width: 50%;
+    height: auto;
+    padding: 3rem;
+  }
+
+  /* Interests Section */
+  #interests .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* Skills Section */
+  #skills .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* Connect Section */
+  #connect .flex {
+    flex-direction: row;
+  }
+}
